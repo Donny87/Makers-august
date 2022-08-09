@@ -166,3 +166,9 @@
 
 #  list_ = []
 
+num1 = input()
+for num in num1:
+    if num1 % num1 == 0:
+        print('Частное': )
+    elif num1 % num2 != 0:
+        print('Остаток': )
