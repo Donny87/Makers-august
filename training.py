@@ -166,9 +166,85 @@
 
 #  list_ = []
 
-num1 = input()
-for num in num1:
-    if num1 % num1 == 0:
-        print('Частное': )
-    elif num1 % num2 != 0:
-        print('Остаток': )
+# num1 = input()
+# for num in num1:
+#     if num1 % num1 == 0:
+#         print('Частное': )
+#     elif num1 % num2 != 0:
+#         print('Остаток': )
+
+
+# import math
+# nums_ = [1, 2, 3, 4, 5, 6]
+# def multiply_list(nums_):
+#     result = math.prod(nums_)
+#     return print(result)
+
+# print(multiply_list(nums_))    
+
+
+
+# def foo():
+#     global var
+#     var = 'переменная foo'
+#     print(f"переменная в foo:  {var}")
+#     def bar():
+#         global var
+        
+#         var = 'переменная bar'
+ 
+#     bar()
+# foo()
+# print('переменная в foo: ', var)
+
+
+# def decorator(func):
+#     def wrapper(*donny, ** ddd):
+#         print('some shit')
+#         print(donny)
+#         # func(donny)
+
+#     return wrapper        
+# @decorator
+# def somefunc(a,b):
+#     print('hello Atai')
+
+# somefunc(5,10)    
+
+
+
+# list_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+# list2 = filter(lambda x: x % 2 == 0, list_)
+# list3 = filter(lambda x: x % 2 != 0, list_)
+
+# print(list(l
+
+
+
+
+
+# list_ = [-1, 2, 3, 5, -3, 7] 
+# result = list(filter(lambda x: x == True for x in list_ if x > 0 else x == False))
+# print(result)
+
+
+
+
+from functools import reduce
+
+
+
+# list_ = ['Paul', 'George', 'Ringo', 'John']
+
+# result = reduce(lambda word1, word2: word1 if len(word1) > len(word2) else word2, list_)
+
+# print(result)
+
+# def max_num(num1, num2):
+#     print(num1 if num1 > num2 else num2)
+
+# print(max_num(10, 12))
+
+string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
+list_ = [num for num in string_.split() if num.isdigit()]
+print(list_)

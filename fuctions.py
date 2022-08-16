@@ -127,10 +127,14 @@ return - ключевое слово для возвращения резуль�
 # func(a=1, c=3, d=55) # kwargs -> {'a': 1, 'c': 3, 'd': 55}
 # func(1, 2, 3, 4 a=10, b=20, c=30)
 
-def my_func(*args):
-    counter = 0
-    for i in args:
-        counter += i
-    return counter    
+# def my_func(*args):
+#     counter = 0
+#     for i in args:
+#         try:
+#             counter += i
+#         except TypeError:
+#             print(f'{i} не является числом')
+#     return counter
 
-print(my_func(1, 2, 3, 4, 5, 6))    # - 21
+
+# print(my_func(1, 2, 3, 4, 'fghjk', 6))
